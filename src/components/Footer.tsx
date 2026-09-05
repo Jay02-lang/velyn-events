@@ -247,7 +247,7 @@ export default function Footer() {
                 (e.currentTarget as HTMLElement).style.borderColor = 'rgba(243,176,82,0.45)';
               }}
             >
-              Begin Your Enquiry →
+              Begin Your Enquiry &rarr;
             </Link>
           </div>
         </div>

@@ -491,7 +491,7 @@ export default function Contact() {
                     onMouseLeave={e => { const el = e.currentTarget; el.style.background = "#F3B052"; el.style.color = "#0F3A22"; }}
                   >
                     <span className="relative z-10">
-                      {isSubmitting ? "TRANSMITTING..." : "SEND ENQUIRY →"}
+                      {isSubmitting ? "TRANSMITTING..." : "SEND ENQUIRY &rarr;"}
                     </span>
                     <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 pointer-events-none"></span>
                   </button>
@@ -600,7 +600,7 @@ export default function Contact() {
               style={{ textDecoration: "none" }}
             >
               <MessageCircle className="w-4 h-4 text-[#F3B052] group-hover:text-[#0F3A22] transition-colors" />
-              <span>WHATSAPP US →</span>
+              <span>WHATSAPP US &rarr;</span>
             </a>
 
           </div>

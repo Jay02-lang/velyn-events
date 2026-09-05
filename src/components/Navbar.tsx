@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -123,7 +123,7 @@ export default function Navbar() {
               style={{ boxShadow: "0 0 0 1.5px #F3B052, 0 0 16px rgba(243,176,82,0.25)" }}
             ></span>
             <span className="relative z-10 flex items-center gap-1.5" style={{ color: "inherit" }}>
-              LET'S TALK <span>→</span>
+              LET'S TALK <span>&rarr;</span>
             </span>
           </Link>
         </div>
@@ -179,7 +179,7 @@ export default function Navbar() {
                   el.style.color = "#F3B052";
                 }}
               >
-                LET'S TALK →
+                LET'S TALK &rarr;
               </Link>
             </div>
           </motion.div>
