@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const faqs = [
   { q: "How far in advance should we book?", a: "For grand destination weddings in Udaipur, Jaipur, or Goa, and multi-day celebrations, we recommend 8-14 months in advance. For intimate anniversary celebrations and corporate galas, 3-6 months is ideal." },
   { q: "Do you travel for destination events?", a: "Absolutely. From royal heritage palaces in Rajasthan and coastal retreats in Goa and Kerala, to international Indian destination weddings in Dubai, Thailand, and Europe, we manage complete guest hospitality and vendor curation." },
-  { q: "What is your minimum investment?", a: "Our commissions begin from â‚¹2,50,000 for intimate ceremonies, decor styling, and bespoke planning, scaling seamlessly for grand multi-day celebrations." }
+  { q: "What is your minimum investment?", a: "Our commissions begin from \u20B92,50,000 for intimate ceremonies, decor styling, and bespoke planning, scaling seamlessly for grand multi-day celebrations." }
 ];
 
 const scrollingImages = [
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="w-full md:w-1/3 flex flex-col items-end md:pl-12 z-20">
             <h2 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-[#F5F5DC] mb-6 text-right">EVENTS</h2>
             <p className="text-sm font-medium text-[#F5F5DC]/80 leading-relaxed text-right">
-              From soulful pheras in ancient forts to starlit Bollywood sangeets, our guests don't just attendâ€”they immerse in warm Indian hospitality, cherished rituals, and timeless memories.
+              From soulful pheras in ancient forts to starlit Bollywood sangeets, our guests don't just attend — they immerse in warm Indian hospitality, cherished rituals, and timeless memories.
             </p>
           </div>
 
@@ -369,7 +369,7 @@ export default function Home() {
                 className="inline-flex items-center gap-3 px-8 py-4 border border-[#F3B052] !text-[#F3B052] text-xs uppercase tracking-[0.3em] font-black hover:bg-[#F3B052] hover:!text-[#0F3A22] transition-all duration-300"
               >
                 Meet Our Founder
-                <span className="text-lg">â†’</span>
+                <span className="text-lg">&rarr;</span>
               </Link>
             </div>
           </div>
@@ -553,7 +553,7 @@ export default function Home() {
                       {faq.q}
                     </h4>
                     <span className={`text-2xl font-light transition-all duration-300 mt-1 md:mt-0 ${activeFaq === i ? 'rotate-90 text-[#0F3A22]' : 'text-[#0F3A22]/40 group-hover:translate-x-2 group-hover:text-[#0F3A22]'}`}>
-                      â†’
+                      &rarr;
                     </span>
                   </div>
                   
@@ -690,12 +690,12 @@ export default function Home() {
                     <div className="relative">
                       <select className="!bg-[#FFFFFF] !text-[#0F3A22] p-3 outline-none w-full appearance-none font-medium text-sm cursor-pointer rounded-xl focus:ring-1 focus:ring-[#F3B052]">
                         <option value="" className="text-black">Select budget</option>
-                        <option value="under_5L" className="text-black">Under â‚¹5 Lakhs</option>
-                        <option value="5L_15L" className="text-black">â‚¹5 Lakhs â€“ â‚¹15 Lakhs</option>
-                        <option value="15L_30L" className="text-black">â‚¹15 Lakhs â€“ â‚¹30 Lakhs</option>
-                        <option value="30L_75L" className="text-black">â‚¹30 Lakhs â€“ â‚¹75 Lakhs</option>
-                        <option value="75L_1.5Cr" className="text-black">â‚¹75 Lakhs â€“ â‚¹1.5 Crore</option>
-                        <option value="1.5Cr_plus" className="text-black">â‚¹1.5 Crore+ (Royal Scale)</option>
+                        <option value="under_5L" className="text-black">Under ₹5 Lakhs</option>
+                        <option value="5L_15L" className="text-black">₹5 Lakhs – ₹15 Lakhs</option>
+                        <option value="15L_30L" className="text-black">₹15 Lakhs – ₹30 Lakhs</option>
+                        <option value="30L_75L" className="text-black">₹30 Lakhs – ₹75 Lakhs</option>
+                        <option value="75L_1.5Cr" className="text-black">₹75 Lakhs – ₹1.5 Crore</option>
+                        <option value="1.5Cr_plus" className="text-black">₹1.5 Crore+ (Royal Scale)</option>
                         <option value="tbd" className="text-black">To be discussed</option>
                       </select>
                       <ChevronDown className="absolute right-3 top-4 w-4 h-4 text-[#0F3A22] pointer-events-none" />

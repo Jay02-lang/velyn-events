@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function About() {
@@ -127,7 +127,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* 4.5. THE FOUNDER â€” PRIVATE SECTION */}
+      {/* 4.5. THE FOUNDER — PRIVATE SECTION */}
       <section id="founder" className="w-full bg-[#F5F5DC] text-[#0F3A22] py-32 px-6 lg:px-12 border-t border-[#0F3A22]/10 overflow-hidden">
         <div className="max-w-[1400px] mx-auto">
 
@@ -148,7 +148,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-[#F3B052]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-multiply z-10"></div>
                 <img
                   src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                  alt="Kabir Velyn â€” Founder"
+                  alt="Kabir Velyn — Founder"
                   className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
                 />
               </div>
@@ -192,7 +192,7 @@ export default function About() {
                   className="inline-flex items-center gap-3 px-8 py-4 bg-[#0F3A22] !text-[#F3B052] text-xs uppercase tracking-[0.3em] font-black hover:bg-[#F3B052] hover:!text-[#0F3A22] transition-all duration-300"
                 >
                   Private Inquiry
-                  <span className="text-lg">â†’</span>
+                  <span className="text-lg">&rarr;</span>
                 </a>
                 <a
                   href="tel:+919876543210"
@@ -210,7 +210,7 @@ export default function About() {
             <blockquote className="text-2xl md:text-4xl font-serif italic text-[#0F3A22] leading-tight max-w-3xl mb-8 relative z-10">
               "An Indian wedding is a sacred tapestry of emotion, tradition, and boundless celebration. Our role is to weave every thread into absolute perfection."
             </blockquote>
-            <span className="text-[10px] uppercase tracking-[0.4em] font-black opacity-40">â€” Kabir Velyn</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] font-black opacity-40">— Kabir Velyn</span>
           </div>
 
         </div>

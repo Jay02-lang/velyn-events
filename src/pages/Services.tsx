@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -115,7 +115,7 @@ export default function Services() {
       {/* 1. HERO SECTION */}
       <section className="relative w-full h-[90vh] flex items-end overflow-hidden bg-[#071E12]">
 
-        {/* Full-bleed background image â€” lighter green film */}
+        {/* Full-bleed background image — lighter green film */}
         <div className="absolute inset-0 z-0 bg-[#0F3A22]">
           <img
             src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2200&q=85"
@@ -128,7 +128,7 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#071E12]/80 via-transparent to-[#071E12]/30" />
         </div>
 
-        {/* Hero content â€” centered */}
+        {/* Hero content — centered */}
         <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 lg:px-16 pb-20 pt-48 flex flex-col items-center text-center">
           <FadeIn>
             <p className="text-[#F3B052] text-[10px] uppercase tracking-[0.55em] font-black mb-6 flex items-center justify-center gap-3">
@@ -209,7 +209,7 @@ export default function Services() {
                        <ul className="space-y-4 text-sm font-medium opacity-90">
                          {svc.deliverables.map((item, i) => (
                            <li key={i} className="flex items-start">
-                             <span className={`${bulletClass} mr-3`}>â€¢</span> {item}
+                             <span className={`${bulletClass} mr-3`}>&bull;</span> {item}
                            </li>
                          ))}
                        </ul>
@@ -219,16 +219,16 @@ export default function Services() {
                        <ul className="space-y-4 text-sm font-medium opacity-90">
                          {svc.process.map((item, i) => (
                            <li key={i} className="flex items-start">
-                             <span className={`${bulletClass} mr-3`}>â€¢</span> {item}
+                             <span className={`${bulletClass} mr-3`}>&bull;</span> {item}
                            </li>
                          ))}
                        </ul>
                      </div>
                    </div>
 
-                   <Link to="/#contact" className={`inline-block border-b font-black uppercase tracking-widest text-[10px] pb-1 transition-colors self-start ${linkClass}`}>
-                     {svc.cta} â†’
-                   </Link>
+                    <Link to="/#contact" className={`inline-block border-b font-black uppercase tracking-widest text-[10px] pb-1 transition-colors self-start ${linkClass}`}>
+                      {svc.cta} &rarr;
+                    </Link>
                  </FadeIn>
               </div>
 

@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 
 const allGalleryImages = [
   { id: 1, category: 'Weddings', title: 'Royal Symphony', img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" },
@@ -52,7 +52,7 @@ export default function Gallery() {
   return (
     <div className="w-full min-h-screen bg-[#0F3A22] flex flex-col pt-32 pb-24 relative font-sans">
       
-      {/* Header Section â€” Full Bleed Hero */}
+      {/* Header Section — Full Bleed Hero */}
       <div className="w-full relative mb-0 overflow-hidden" style={{ minHeight: '70vh' }}>
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
