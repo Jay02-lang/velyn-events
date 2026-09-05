@@ -232,10 +232,10 @@ export default function Services() {
                  </FadeIn>
               </div>
 
-              <div className={`w-full aspect-[4/5] group overflow-hidden shadow-2xl relative border ${borderClass} ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+              <div className={`w-full aspect-[4/5] group overflow-hidden shadow-2xl relative border ${borderClass} ${isEven ? 'lg:order-1' : 'lg:order-2'} rounded-2xl`}>
                 <FadeIn delay={0.2}>
                   <div className={`absolute inset-0 ${imageOverlay} opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10 mix-blend-multiply pointer-events-none`}></div>
-                  <img src={svc.img} className= rounded-2xl"w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000" alt={svc.title.replace('\n', ' ')} />
+                  <img src={svc.img} className="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000" alt={svc.title.replace('\n', ' ')} />
                 </FadeIn>
               </div>
 
