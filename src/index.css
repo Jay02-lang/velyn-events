@@ -1,0 +1,134 @@
+﻿@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+@theme {
+  --color-theme-background: #FDFCF5; /* Soft Cream */
+  --color-theme-surface: #FFFFFF;    /* Pure White */
+  --color-theme-primary: #0F3A22;    /* CrestPoint Dark Forest Green */
+  --color-theme-secondary: #F3B052;  /* CrestPoint Mustard Gold */
+  --color-theme-accent: #F3B052;     /* CrestPoint Mustard Gold */
+
+  --color-theme-onprimary: #F3B052;  /* Mustard Gold on Dark Green */
+  --color-theme-text: #0F3A22;       /* Dark Green Text */
+  --color-theme-text-muted: #2E5C41; /* Muted Forest Green */
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-fancy: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-theme-background);
+    color: var(--color-theme-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Remove browser default blue from ALL links */
+  a, a:link, a:visited, a:active {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-theme-background); }
+  ::-webkit-scrollbar-thumb { background: #d4cfc1; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-theme-primary); }
+}
+
+@layer utilities {
+  .text-theme-white { color: #F5F5DC !important; }
+  .text-white-force { color: #FFFFFF !important; }
+  .text-black-force { color: #000000 !important; }
+  .bg-white-force { background-color: #FFFFFF !important; }
+  .bg-black-force { background-color: #1A1A1A !important; }
+  .text-theme-primary { color: var(--color-theme-primary) !important; }
+  .text-theme-secondary { color: var(--color-theme-secondary) !important; }
+  .text-theme-accent { color: var(--color-theme-accent) !important; }
+  .text-theme-onprimary { color: var(--color-theme-onprimary) !important; }
+  .bg-theme-primary { background-color: var(--color-theme-primary) !important; }
+  .bg-theme-secondary { background-color: var(--color-theme-secondary) !important; }
+  .bg-theme-accent { background-color: var(--color-theme-accent) !important; }
+  .text-theme-text { color: var(--color-theme-text) !important; }
+  .text-theme-text-muted { color: var(--color-theme-text-muted) !important; }
+  .bg-theme-background { background-color: var(--color-theme-background) !important; }
+  .bg-theme-surface { background-color: var(--color-theme-surface) !important; }
+  .border-theme-primary { border-color: var(--color-theme-primary) !important; }
+
+  .bg-\[\#0F3A22\], .bg-theme-primary {
+    background-color: var(--color-theme-primary) !important;
+    background-image: radial-gradient(rgba(243, 176, 82, 0.12) 1px, transparent 1px) !important;
+    background-size: 24px 24px !important;
+  }
+}
+
+@layer components {
+  .footer-link-dark {
+    color: #0F3A22 !important;
+  }
+  .footer-link-dark:hover {
+    color: #F5F5DC !important;
+  }
+  
+  .footer-link-dark-hover-yellow {
+    color: #0F3A22 !important;
+  }
+  .footer-link-dark-hover-yellow:hover {
+    color: #F3B052 !important;
+  }
+  
+  .nav-link-active {
+    color: #F3B052 !important;
+  }
+  .nav-link-inactive {
+    color: #F5F5DC !important;
+  }
+  .nav-link-inactive:hover {
+    color: rgba(243, 176, 82, 0.8) !important;
+  }
+}
+
+@keyframes waveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Solid oliveâ€‘green text */
+.animate-wave-text {
+  color: var(--color-theme-primary) !important;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  20% { left: 200%; }
+  100% { left: 200%; }
+}
+
+.btn-shine-gold::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(243,176,82,0) 0%, rgba(243,176,82,0.4) 50%, rgba(243,176,82,0) 100%);
+  transform: skewX(-20deg);
+  animation: shine 4s infinite;
+}
+
+input::placeholder, textarea::placeholder { color: #000000 !important; opacity: 1 !important; }
+
+/* ── Globally round all content images (exclude background fills) ── */
+img:not(.img-bg) {
+  border-radius: 1rem;
+}
